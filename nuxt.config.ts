@@ -5,9 +5,7 @@ export default defineNuxtConfig({
   alias: {
     "@": resolve(__dirname, "/")
   },
-  typescript: {
-    shim: true
-  },
+  buildModules: ['@nuxt/typescript-build'],
   css: ["~/assets/main.scss"],
   postcss: {
     plugins: {
